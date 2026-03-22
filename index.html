@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satvic Kids Food Book Launch – Team Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style> :root {--green-deep:#1a3a2a;--green-mid:#2d6a4f;--green-bright:#52b788;--green-light:#b7e4c7;--green-pale:#edf7f0;--amber:#e07b39;--amber-light:#fdf0e8;--cream:#faf7f2;--ink:#1a1a1a;--muted:#6b7c74;--border:#d4e8db;--white:#ffffff;--gold:#c9a84c}* {margin:0;padding:0;box-sizing:border-box}body {font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);min-height:100vh}/* ── NAV ── */ nav {position:fixed;top:0;left:0;right:0;z-index:100;background:var(--green-deep);display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:60px;box-shadow:0 2px 20px rgba(0,0,0,.3)}.nav-logo {font-family:'Playfair Display',serif;color:var(--green-light);font-size:1rem;letter-spacing:.03em}.nav-badge {background:var(--amber);color:white;font-size:.72rem;font-weight:600;padding:.3rem .8rem;border-radius:20px;letter-spacing:.05em;text-transform:uppercase}/* ── HERO ── */ .hero {padding-top:60px;background:var(--green-deep);position:relative;overflow:hidden}.hero::before {content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(82,183,136,.18) 0%,transparent 70%),radial-gradient(ellipse at 20% 80%,rgba(201,168,76,.12) 0%,transparent 60%)}.hero-inner {position:relative;max-width:860px;margin:0 auto;padding:5rem 2.5rem 4rem;text-align:center}.hero-eyebrow {display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--green-bright);background:rgba(82,183,136,.15);border:1px solid rgba(82,183,136,.3);padding:.4rem 1rem;border-radius:20px;margin-bottom:1.8rem}.hero h1 {font-family:'Playfair Display',serif;font-size:clamp(2.4rem,6vw,3.8rem);color:var(--white);line-height:1.12;margin-bottom:1.2rem;letter-spacing:-.01em}.hero h1 em {font-style:italic;color:var(--green-bright)}.hero-meta {display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap;margin-bottom:2rem}.hero-meta-item {display:flex;align-items:center;gap:.5rem;color:rgba(255,255,255,.7);font-size:.9rem}.hero-meta-item span.dot {width:6px;height:6px;background:var(--green-bright);border-radius:50%;flex-shrink:0}.hero-desc {color:rgba(255,255,255,.72);font-size:1.05rem;line-height:1.75;max-width:640px;margin:0 auto 2rem}.dress-code-banner {display:inline-flex;align-items:center;gap:.7rem;background:linear-gradient(135deg,var(--amber),#d4691e);color:white;padding:.8rem 1.8rem;border-radius:40px;font-weight:600;font-size:.95rem;letter-spacing:.02em;box-shadow:0 4px 20px rgba(224,123,57,.4);margin-bottom:1rem}.dress-code-banner .emoji {font-size:1.2rem}/* ── SCHEDULE STRIP ── */ .schedule-section {background:var(--green-deep);border-top:1px solid rgba(82,183,136,.2);padding:2rem 2rem 3rem}.schedule-label {text-align:center;font-size:.72rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--green-bright);margin-bottom:1.5rem}.schedule-list {max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:0;border-left:2px solid rgba(82,183,136,.3);padding-left:0;margin-left:auto;margin-right:auto}.sched-row {display:grid;grid-template-columns:80px 28px 1fr;align-items:center;gap:.75rem;padding:.6rem 1rem .6rem 1.2rem;position:relative;border-bottom:1px solid rgba(255,255,255,.04)}.sched-row::before {content:'';position:absolute;left:-7px;top:50%;transform:translateY(-50%);width:12px;height:12px;border-radius:50%;background:var(--green-deep);border:2px solid rgba(82,183,136,.4)}.sched-row.highlight::before {background:var(--green-mid);border-color:var(--green-bright)}.sched-row-time {font-size:.75rem;font-weight:700;color:var(--green-bright);letter-spacing:.04em;text-align:right}.sched-row-dot {font-size:1rem;text-align:center}.sched-row-name {font-size:.88rem;color:rgba(255,255,255,.75);line-height:1.35}.sched-row.highlight .sched-row-name {color:rgba(255,255,255,.92)}/* ── MAIN CONTENT ── */ main {max-width:1100px;margin:0 auto;padding:4rem 2rem}.section-heading {font-family:'Playfair Display',serif;font-size:1.9rem;color:var(--green-deep);margin-bottom:.5rem}.section-sub {color:var(--muted);font-size:.95rem;margin-bottom:2.5rem}/* ── STATION GRID ── */ .stations-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem;margin-bottom:5rem}.station-card {background:var(--white);border:1.5px solid var(--border);border-radius:16px;padding:1.6rem;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s;text-decoration:none;color:inherit;display:block;position:relative;overflow:hidden}.station-card::before {content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--green-mid),var(--green-bright));opacity:0;transition:opacity .2s}.station-card:hover {transform:translateY(-3px);box-shadow:0 12px 40px rgba(45,106,79,.12);border-color:var(--green-bright)}.station-card:hover::before {opacity:1}.card-emoji {font-size:2rem;margin-bottom:.8rem;display:block}.card-title {font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--green-deep);margin-bottom:.3rem;font-weight:700}.card-time {font-size:.78rem;color:var(--amber);font-weight:600;letter-spacing:.04em;margin-bottom:.9rem}.card-roles {display:flex;flex-direction:column;gap:.45rem;margin-top:.6rem}.role-pill {display:flex;align-items:center;gap:.6rem;padding:.5rem .75rem;border-radius:8px;font-size:.82rem;transition:background .15s}.role-pill.filled {background:var(--green-pale);border:1px solid var(--green-light)}.role-pill.open {background:var(--amber-light);border:1px solid #f3c99b;cursor:pointer}.role-pill.open:hover {background:#fae3cb}.role-label {font-weight:600;color:var(--green-mid);min-width:52px;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em}.role-name {color:var(--ink)}.role-name.available {color:var(--amber);font-style:italic;font-weight:500}.unsign-btn {font-size:.7rem;color:var(--muted);background:none;border:1px solid #ddd;cursor:pointer;padding:.2rem .5rem;border-radius:6px;margin-left:auto;transition:color .15s,border-color .15s}.unsign-btn:hover {color:#c0392b;border-color:#c0392b}.proj-unsign-btn {font-size:.75rem;color:var(--muted);background:none;border:1px solid #ddd;cursor:pointer;padding:.3rem .7rem;border-radius:8px;transition:color .15s,border-color .15s}.proj-unsign-btn:hover {color:#c0392b;border-color:#c0392b}.signup-btn {font-size:.75rem;color:var(--amber);font-weight:600;margin-left:auto;text-decoration:underline;background:none;border:none;cursor:pointer;padding:0}/* ── MODAL ── */ .modal-overlay {position:fixed;inset:0;z-index:200;background:rgba(26,58,42,.55);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:1.5rem;opacity:0;pointer-events:none;transition:opacity .25s}.modal-overlay.active {opacity:1;pointer-events:all}.modal {background:var(--white);border-radius:20px;padding:2.5rem;max-width:440px;width:100%;box-shadow:0 30px 80px rgba(0,0,0,.2);transform:translateY(20px) scale(.97);transition:transform .25s;position:relative}.modal-overlay.active .modal {transform:none}.modal-close {position:absolute;top:1.2rem;right:1.2rem;background:var(--green-pale);border:none;cursor:pointer;width:32px;height:32px;border-radius:50%;font-size:1rem;color:var(--muted);display:flex;align-items:center;justify-content:center}.modal h3 {font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--green-deep);margin-bottom:.3rem}.modal-role-tag {display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--amber);background:var(--amber-light);padding:.25rem .7rem;border-radius:12px;margin-bottom:1.5rem}.modal-input {width:100%;border:1.5px solid var(--border);border-radius:10px;padding:.8rem 1rem;font-family:'DM Sans',sans-serif;font-size:.95rem;color:var(--ink);background:var(--cream);outline:none;transition:border-color .15s;margin-bottom:1rem}.modal-input:focus {border-color:var(--green-bright);background:white}.modal-input::placeholder {color:#aaa}.modal-checkbox-row {display:flex;align-items:flex-start;gap:.75rem;margin-bottom:1.5rem;padding:1rem;background:var(--green-pale);border-radius:10px;border:1px solid var(--green-light);cursor:pointer}.modal-checkbox-row input[type="checkbox"] {width:18px;height:18px;margin-top:2px;cursor:pointer;accent-color:var(--green-mid);flex-shrink:0}.modal-checkbox-label {font-size:.9rem;color:var(--green-deep);font-weight:500;line-height:1.4;cursor:pointer}.modal-submit {width:100%;background:linear-gradient(135deg,var(--green-mid),var(--green-bright));color:white;border:none;border-radius:12px;padding:.9rem;font-family:'DM Sans',sans-serif;font-size:.95rem;font-weight:600;cursor:pointer;transition:opacity .15s,transform .15s}.modal-submit:hover {opacity:.9;transform:translateY(-1px)}.modal-submit:disabled {opacity:.5;cursor:not-allowed;transform:none}.modal-success {text-align:center;padding:1rem 0}.modal-success .check {font-size:3rem;margin-bottom:.8rem}.modal-success p {color:var(--muted);line-height:1.6}/* ── PROJECT PAGE ── */ #project-page {display:none;min-height:100vh;padding-top:60px}.project-hero {background:var(--green-deep);padding:3.5rem 2.5rem 3rem;position:relative;overflow:hidden}.project-hero::before {content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(82,183,136,.15) 0%,transparent 70%)}.project-hero-inner {max-width:860px;margin:0 auto;position:relative}.back-btn {display:inline-flex;align-items:center;gap:.5rem;color:var(--green-bright);font-size:.85rem;font-weight:500;background:none;border:none;cursor:pointer;padding:0;margin-bottom:1.5rem;transition:gap .15s}.back-btn:hover {gap:.3rem}.project-hero-emoji {font-size:2.5rem;margin-bottom:.8rem;display:block}.project-hero h2 {font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3rem);color:var(--white);margin-bottom:.8rem}.project-timing-chips {display:flex;flex-direction:column;gap:.5rem;margin-bottom:1rem;align-items:flex-start}.timing-chip {background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.85);font-size:.78rem;font-weight:500;padding:.35rem .85rem;border-radius:20px}.timing-chip.prep {border-color:rgba(201,168,76,.4);color:var(--gold)}.project-desc {color:rgba(255,255,255,.72);font-size:1rem;line-height:1.75;max-width:680px}/* ── PROJECT BODY ── */ .project-body {max-width:860px;margin:0 auto;padding:3rem 2rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}@media (max-width:680px) {.project-body {grid-template-columns:1fr}.stations-grid {grid-template-columns:1fr}}.project-card {background:var(--white);border:1.5px solid var(--border);border-radius:16px;padding:1.8rem}.project-card-title {font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green-mid);margin-bottom:1.2rem;display:flex;align-items:center;gap:.5rem}.project-card-title::after {content:'';flex:1;height:1px;background:var(--border)}/* To-do list */ .todo-list {list-style:none;display:flex;flex-direction:column;gap:.6rem}.todo-item {display:flex;align-items:flex-start;gap:.75rem;padding:.6rem .75rem;border-radius:8px;background:var(--green-pale);font-size:.88rem;line-height:1.45;border:1px solid var(--green-light)}.todo-item .todo-check {width:16px;height:16px;border:2px solid var(--green-bright);border-radius:4px;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .15s}.todo-item.done .todo-check {background:var(--green-bright);border-color:var(--green-bright)}.todo-item.done .todo-check::after {content:'✓';color:white;font-size:.7rem}.todo-item.done .todo-text {text-decoration:line-through;color:var(--muted)}.todo-deadline {font-size:.72rem;color:var(--amber);font-weight:600;display:block;margin-top:.2rem}.order-embed-wrap {margin-top:1rem;border-radius:10px;overflow:hidden;border:1.5px solid var(--border);background:var(--green-pale)}.order-embed-frame {width:100%;height:420px;display:block;border:none}.todo-order-link {display:inline-flex;align-items:center;gap:.3rem;font-size:.78rem;color:var(--green-mid);font-weight:600;text-decoration:none;background:var(--green-pale);border:1px solid var(--green-light);padding:.4rem .8rem;border-radius:8px;margin-top:.8rem;transition:background .15s;width:100%;justify-content:center}.todo-order-link:hover {background:var(--green-light)}/* Project roles */ .proj-roles {display:flex;flex-direction:column;gap:.6rem}.proj-role-row {display:flex;align-items:center;gap:.75rem;padding:.75rem 1rem;border-radius:10px;border:1.5px solid var(--border)}.proj-role-row.filled {background:var(--green-pale);border-color:var(--green-light)}.proj-role-row.open {background:var(--amber-light);border-color:#f3c99b}.proj-role-badge {font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.2rem .55rem;border-radius:6px;flex-shrink:0}.proj-role-badge.lead {background:var(--green-light);color:var(--green-deep)}.proj-role-badge.helper {background:#fde8d4;color:#8b4513}.proj-role-name {font-size:.9rem;font-weight:500;flex:1}.proj-role-name.available {color:var(--amber);font-style:italic}.proj-signup-btn {font-size:.78rem;font-weight:600;color:white;background:var(--amber);border:none;cursor:pointer;padding:.35rem .8rem;border-radius:8px;transition:background .15s}.proj-signup-btn:hover {background:#c96d28}/* ── FOOTER ── */ footer {text-align:center;padding:3rem 2rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border)}</style>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+<script>
+// Wait for both Firebase SDKs then init
+window.addEventListener('load', function() {
+  if (typeof firebase !== 'undefined') {
+    initFirebase();
+  }
+});
+</script>
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">🌿 Satvic Kids Food Book Launch</span>
+  <span class="nav-badge">Internal Team</span>
+</nav>
+
+<div id="home-page">
+
+  <div class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Internal Team Portal</span>
+      <h1>Kids Food Book<br><em>Launch Day</em></h1>
+      <div class="hero-meta">
+        <div class="hero-meta-item"><span class="dot"></span> Friday, 3 April 2026</div>
+        <div class="hero-meta-item"><span class="dot"></span> 11:00 AM – 3:10 PM</div>
+        <div class="hero-meta-item"><span class="dot"></span> Satvic Movement HQ</div>
+        <div class="hero-meta-item"><span class="dot"></span> ~75 Guests</div>
+      </div>
+      <p class="hero-desc">
+        A vibrant community gathering to celebrate the launch of the new Satvic Kids Book! The day will be filled with hands-on activities, interactive games and delicious food.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;margin-bottom:2rem;">
+        <span style="background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.35);color:#c9a84c;font-size:.8rem;font-weight:600;padding:.45rem 1rem;border-radius:20px;letter-spacing:.03em;">🍳 Morning Prep &nbsp; 6:00 – 8:00 AM</span>
+        <span style="background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.35);color:#c9a84c;font-size:.8rem;font-weight:600;padding:.45rem 1rem;border-radius:20px;letter-spacing:.03em;">🕯️ Morning Pooja &nbsp; 8:00 – 9:00 AM</span>
+        <span style="background:rgba(82,183,136,.15);border:1px solid rgba(82,183,136,.3);color:#52b788;font-size:.8rem;font-weight:600;padding:.45rem 1rem;border-radius:20px;letter-spacing:.03em;">⚙️ Team Prep &amp; Setup &nbsp; 9:00 – 11:00 AM</span>
+        <span style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:rgba(255,255,255,.9);font-size:.8rem;font-weight:600;padding:.45rem 1rem;border-radius:20px;letter-spacing:.03em;">🎉 The Event &nbsp; 11:00 AM – 3:10 PM</span>
+      </div>
+      <div class="dress-code-banner">
+        <span class="emoji">🌈</span> Dress Code: Dress Colourful!! <span class="emoji">🌈</span>
+      </div>
+    </div>
+
+    <div class="schedule-section">
+      <div class="schedule-label">Day Schedule</div>
+      <div class="schedule-list">
+        <div class="sched-row"><span class="sched-row-time">6:00 AM</span><span class="sched-row-dot">🍳</span><span class="sched-row-name">Morning Prep</span></div>
+        <div class="sched-row"><span class="sched-row-time">8:00 AM</span><span class="sched-row-dot">🕯️</span><span class="sched-row-name">Morning Pooja</span></div>
+        <div class="sched-row"><span class="sched-row-time">9:00 AM</span><span class="sched-row-dot">📋</span><span class="sched-row-name">Team Meeting &amp; Briefing</span></div>
+        <div class="sched-row"><span class="sched-row-time">10:30 AM</span><span class="sched-row-dot">✅</span><span class="sched-row-name">Final Setup &amp; Checks</span></div>
+        <div class="sched-row highlight"><span class="sched-row-time">11:00 AM</span><span class="sched-row-dot">🚪</span><span class="sched-row-name">Guests Arrive &amp; Welcome</span></div>
+        <div class="sched-row highlight"><span class="sched-row-time">11:30 AM</span><span class="sched-row-dot">🎤</span><span class="sched-row-name">Opening Introduction – Subah &amp; Harsh</span></div>
+        <div class="sched-row highlight"><span class="sched-row-time">12:00 PM</span><span class="sched-row-dot">📖</span><span class="sched-row-name">Official Book Reveal</span></div>
+        <div class="sched-row highlight"><span class="sched-row-time">12:15 PM</span><span class="sched-row-dot">🎪</span><span class="sched-row-name">Activity Stations (1st Floor)</span></div>
+        <div class="sched-row highlight"><span class="sched-row-time">1:15 PM</span><span class="sched-row-dot">🌾</span><span class="sched-row-name">Ground Floor Group Activity – Harsh</span></div>
+        <div class="sched-row highlight"><span class="sched-row-time">1:30 PM</span><span class="sched-row-dot">🍱</span><span class="sched-row-name">Satvic Thali Lunch</span></div>
+        <div class="sched-row highlight"><span class="sched-row-time">2:30 PM</span><span class="sched-row-dot">🎨</span><span class="sched-row-name">Farewell Activities</span></div>
+        <div class="sched-row highlight"><span class="sched-row-time">2:45 PM</span><span class="sched-row-dot">🎵</span><span class="sched-row-name">Closing Kirtan – Subah &amp; Harsh</span></div>
+        <div class="sched-row highlight"><span class="sched-row-time">3:10 PM</span><span class="sched-row-dot">🎁</span><span class="sched-row-name">Gift Distribution &amp; Guest Departure</span></div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <h2 class="section-heading">Stations &amp; Projects</h2>
+    <p class="section-sub">To make the day extra special we have split the event into different stations and projects. Each of them will have a lead or coordinator to make sure that everything runs smoothly and we create the most fantastic and exciting day for the community.<br><br><strong>The lead is responsible for ideation, planning and execution!</strong></p>
+
+    <div class="stations-grid" id="stations-grid">
+      
+    </div>
+  </main>
+
+  <footer>
+    🌿 Satvic Kids Food Book Launch &nbsp;·&nbsp; Team Portal &nbsp;·&nbsp; Internal Use Only &nbsp;·&nbsp; Friday 3 April 2026
+  </footer>
+</div>
+
+<div id="project-page">
+  <div class="project-hero">
+    <div class="project-hero-inner">
+      <button class="back-btn" onclick="showHome()">← Back to all stations</button>
+      <span class="project-hero-emoji" id="proj-emoji"></span>
+      <h2 id="proj-title"></h2>
+      <div class="project-timing-chips" id="proj-chips"></div>
+      <p class="project-desc" id="proj-desc"></p>
+    </div>
+  </div>
+  <div class="project-body">
+    <div>
+      <div class="project-card">
+        <div class="project-card-title">To-Do List</div>
+        <ul class="todo-list" id="proj-todos"></ul>
+        <a href="https://docs.google.com/spreadsheets/d/1dOEz6tmuFYVKGXydzurCSao-CA3YR68TUbJQ7GTpA4o/edit?usp=sharing" target="_blank" class="todo-order-link" id="proj-order-link">
+          📋 Fill in the Order Form by 27th March →
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="project-card">
+        <div class="project-card-title">Roles</div>
+        <div class="proj-roles" id="proj-roles"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-overlay" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <h3 id="modal-station-title">Sign Up</h3>
+    <span class="modal-role-tag" id="modal-role-tag"></span>
+    <div id="modal-form">
+      <input type="text" class="modal-input" id="signup-name" placeholder="Your name" autocomplete="off">
+      <label class="modal-checkbox-row">
+        <input type="checkbox" id="signup-check">
+        <span class="modal-checkbox-label">🌿 I would love to do this!</span>
+      </label>
+      <button class="modal-submit" id="modal-submit-btn" onclick="submitSignup()" disabled>Sign Me Up</button>
+    </div>
+    <div id="modal-success" class="modal-success" style="display:none">
+      <div class="check">🎉</div>
+      <p>You're signed up!<br>See you on <strong>3 April</strong>. Thank you for being part of this special day.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── FIREBASE (compat SDK loaded via script tags in <head>) ────────────────────
+let db = null;
+let signups = {};
+let doneTodos = {};
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBT-E6GRMs4Eu6Nmmbh9eS4TAuw29q41t0",
+  authDomain: "satvic-launch.firebaseapp.com",
+  databaseURL: "https://satvic-launch-default-rtdb.firebaseio.com",
+  projectId: "satvic-launch",
+  storageBucket: "satvic-launch.firebasestorage.app",
+  messagingSenderId: "687708198673",
+  appId: "1:687708198673:web:ea7ac324d5e29aa8529eb0"
+};
+
+function initFirebase() {
+  try {
+    firebase.initializeApp(firebaseConfig);
+    db = firebase.database();
+    db.ref('signups').on('value', function(snap) {
+      signups = snap.val() || {};
+      if (window.currentProjectId) showProject(window.currentProjectId);
+      else renderHome();
+    });
+    db.ref('todos').on('value', function(snap) {
+      doneTodos = snap.val() || {};
+      if (window.currentProjectId) applyDoneTodos(window.currentProjectId);
+    });
+  } catch(e) {
+    console.warn('Firebase error, using localStorage:', e);
+    signups = JSON.parse(localStorage.getItem('satvic_signups') || '{}');
+    doneTodos = JSON.parse(localStorage.getItem('satvic_todos') || '{}');
+  }
+}
+
+function saveSignupRemote(stationId, roleIndex, name) {
+  if (db) {
+    db.ref('signups/' + stationId + '/' + roleIndex).set(name);
+  } else {
+    if (!signups[stationId]) signups[stationId] = {};
+    signups[stationId][roleIndex] = name;
+    localStorage.setItem('satvic_signups', JSON.stringify(signups));
+  }
+}
+
+function removeSignupRemote(stationId, roleIndex) {
+  if (db) {
+    db.ref('signups/' + stationId + '/' + roleIndex).remove();
+  } else {
+    if (signups[stationId]) delete signups[stationId][roleIndex];
+    localStorage.setItem('satvic_signups', JSON.stringify(signups));
+    if (window.currentProjectId === stationId) showProject(stationId);
+    else renderHome();
+  }
+}
+
+function saveTodoRemote(key, value) {
+  if (db) {
+    if (value) db.ref('todos/' + key).set(true);
+    else db.ref('todos/' + key).remove();
+  } else {
+    if (value) doneTodos[key] = true;
+    else delete doneTodos[key];
+    localStorage.setItem('satvic_todos', JSON.stringify(doneTodos));
+  }
+}
+
+const stations = [
+  {
+    id: 'pooja',
+    emoji: '🕯️',
+    title: 'Pooja',
+    prepTime: 'Prep: Day before',
+    onDay: '7:00 AM – 10:30 AM',
+    description: 'The day begins with a morning pooja at Satvic Movement HQ to set a positive, intentional energy for the entire event. This includes arranging the hawan, coordinating with Pandit Ji, and organising the team breakfast on banana leaves.',
+    todos: [
+      { text: 'Arrange all supplies for Pooja', deadline: null },
+      { text: 'Find and confirm Pandit Ji', deadline: '⚠️ Urgent – confirm ASAP' },
+      { text: 'Source banana leaves (clean and prep before use)', deadline: 'Day before' },
+      { text: 'Calculate number of team members for breakfast', deadline: 'By 1 April' },
+      { text: 'Prepare Poha and fruit platter for team breakfast', deadline: 'Morning of event' },
+      { text: 'Fill in the order form for any items to purchase', deadline: 'By 27 March' },
+    ],
+    roles: [
+      { label: 'Lead', name: null },
+      { label: 'Helper', name: null },
+    ]
+  },
+  {
+    id: 'decorations',
+    emoji: '🌸',
+    title: 'Decorations',
+    prepTime: 'Prep: Day before',
+    onDay: '7:00 AM – 11:00 AM',
+    description: 'Responsible for procuring, making and setting up all decorations and props across the event. Think kid-friendly and sustainable decorations! Decoration work begins the day before — sourcing materials, creating props and setting everything up. On the day, oversee final setup across all event spaces before guests arrive.',
+    todos: [
+      { text: 'Plan and sketch the decoration layout for each area', deadline: 'By 29 March' },
+      { text: 'Source fresh flowers from flower market', deadline: 'Day before' },
+      { text: 'Prepare fruit and vegetable decorative elements', deadline: 'Day before' },
+      { text: 'Set up all decorations at HQ', deadline: 'Day before (evening)' },
+      { text: 'Final check and touch-up of all decorations', deadline: 'Morning of – 7:00 AM' },
+      { text: 'Fill in the order form for any items to purchase', deadline: 'By 27 March' },
+    ],
+    roles: [
+      { label: 'Lead', name: null },
+      { label: 'Helper 1', name: null },
+      { label: 'Helper 2', name: null },
+      { label: 'Helper 3', name: null },
+    ]
+  },
+  {
+    id: 'food-menu',
+    emoji: '🍳',
+    title: 'Food & Menu',
+    prepTime: 'Prep: Day before',
+    onDay: '6:00 AM – 1:30 PM',
+    description: 'Oversees all food preparation in the kitchen. Mini and Diksha lead the kitchen. Preparation begins the day before — soaking, chopping and pre-cooking. On the day, coordinate kitchen staff, follow the full prep schedule and ensure all dishes are ready on time. Taste all dishes before service.',
+    todos: [
+      { text: 'Wednesday evening: Soak cashews, sunflower seeds, black rice, foxtail millet, kala chana, arhar dal, chickpeas, brown rice, little millet', deadline: 'Wed 1 April (eve)' },
+      { text: 'Thursday: Prepare flours (oat, almond, flax seed), spice powders, gluten-free bread, coconut milk, tomato mayo, pesto, millet phirni, black rice pudding, korma gravy, chutneys, beetroot pickle', deadline: 'Thu 2 April' },
+      { text: 'Thursday: Chop all vegetables; prepare saffron lemonade', deadline: 'Thu 2 April' },
+      { text: 'Thursday: Wash all plates, glasses, kulhads, steel spoons – dry properly', deadline: 'Thu 2 April' },
+      { text: 'Friday 6 AM: Coordinate kitchen staff, confirm all recipes in progress', deadline: 'Fri 3 April 6:00 AM' },
+      { text: 'Taste all dishes before service', deadline: 'By 10:00 AM on the day' },
+      { text: 'All food plated and ready on counters', deadline: 'By 1:15 PM on the day' },
+      { text: 'Fill in the order form for any ingredients to purchase', deadline: 'By 27 March' },
+    ],
+    roles: [
+      { label: 'Lead', name: 'Mini & Diksha' },
+      { label: 'Helper', name: 'Jeetu' },
+      { label: 'Helper', name: 'Soma' },
+      { label: 'Helper', name: 'Avantika' },
+    ]
+  },
+  {
+    id: 'ambience',
+    emoji: '🌿',
+    title: 'Ambience of the Space',
+    prepTime: 'Prep: 9:00 AM',
+    onDay: '9:00 AM – 3:10 PM',
+    description: 'Sets up and manages background music, fragrance, incense and overall atmosphere throughout the event. Diffuses kapoor every 30-40 minutes. Burns incense sticks hourly. Manages fragrance in bathrooms and changes bathroom mats throughout the event to ensure they stay dry.',
+    todos: [
+      { text: 'Prepare music playlist (background music for welcome, lunch, farewell)', deadline: 'By 2 April' },
+      { text: 'Set up diffusers with essential oil in all areas', deadline: '9:00 AM on the day' },
+      { text: 'Diffuse kapoor every 30-40 minutes throughout the event', deadline: 'Ongoing' },
+      { text: 'Burn incense sticks every hour throughout the event', deadline: 'Ongoing' },
+      { text: 'Check bathroom fragrance and mats every 30 minutes', deadline: 'Ongoing' },
+      { text: 'Change bathroom mats as needed to keep them dry', deadline: 'Ongoing' },
+      { text: 'Fill in the order form for kapoor, incense, oils needed', deadline: 'By 27 March' },
+    ],
+    roles: [
+      { label: 'Lead', name: null },
+      { label: 'Helper', name: null },
+    ]
+  },
+  {
+    id: 'welcome',
+    emoji: '🚪',
+    title: 'Welcome Desk & Arrival',
+    prepTime: 'Prep: 10:00 AM',
+    onDay: '10:30 AM – 12:00 PM',
+    description: 'Greets guests warmly at the door with a tilak welcome. Distributes Satvic Passports (premade with correct vegetable group sticker) and Find Someone Who interaction sheets. Manages the entrance greeter at the main shutter.',
+    todos: [
+      { text: 'Pre-attach correct vegetable sticker to each passport (4 groups of ~20)', deadline: 'By 2 April' },
+      { text: 'Print Find Someone Who sheets (80 copies)', deadline: 'By 2 April' },
+      { text: 'Prepare tilak plate and flowers for entrance', deadline: 'Morning of – 10:00 AM' },
+      { text: 'Brief entrance greeter on where to direct guests', deadline: 'Before 10:30 AM' },
+      { text: 'Set up welcome desk with passports and Find Someone Who sheets', deadline: 'By 10:30 AM' },
+      { text: 'Manage shoe removal and ensure shoes are lined in the balcony', deadline: 'From 11:00 AM' },
+      { text: 'Fill in the order form for any supplies needed', deadline: 'By 27 March' },
+    ],
+    roles: [
+      { label: 'Lead', name: null },
+      { label: 'Helper', name: null },
+      { label: 'Entrance Greeter', name: null },
+    ]
+  },
+  {
+    id: 'polaroid',
+    emoji: '📸',
+    title: 'Polaroid & Gift Distribution',
+    prepTime: 'Prep: 10:30 AM',
+    onDay: '11:00 AM – 3:10 PM',
+    description: 'Oversees polaroid photography throughout the entire event. Writes guest names on the back of each photo. During farewell activities, sorts polaroids by name so they can be discreetly slipped into each guest\'s gift hamper. Ensures every guest receives the correct gift at exit: Kids Food Book + polaroid + thank-you letter.',
+    todos: [
+      { text: 'Check polaroid cameras are working and film is stocked', deadline: 'By 2 April' },
+      { text: 'Purchase polaroid film packs (at least 5 packs)', deadline: 'By 27 March' },
+      { text: 'Get permanent markers for writing names on photo backs', deadline: 'By 2 April' },
+      { text: 'Prepare gift hampers: book + thank-you letter + jute bag', deadline: 'By 2 April' },
+      { text: 'Sort polaroids by guest name during farewell (2:30 PM)', deadline: 'During farewell activities' },
+      { text: 'Ensure every guest receives their hamper with correct polaroid at exit', deadline: '3:10 PM onward' },
+      { text: 'Fill in the order form for film packs and materials', deadline: 'By 27 March' },
+    ],
+    roles: [
+      { label: 'Lead', name: null },
+      { label: 'Helper', name: null },
+    ]
+  },
+  {
+    id: 'introduction',
+    emoji: '🎤',
+    title: 'Opening Introduction',
+    prepTime: 'Prep: 10:00 AM',
+    onDay: '10:00 AM – 12:00 PM',
+    description: 'Supports hosts Subah & Harsh during the opening introduction on the first floor. Sets up the introduction space — lays out mats and seating for all ~75 guests. Manages mic and sound check. Prepares the hidden sugar demonstration (cola can + teaspoons or sugar cubes).',
+    todos: [
+      { text: 'Lay out mats and seating for all guests in the introduction space (1st floor)', deadline: 'By 10:30 AM' },
+      { text: 'Check and set up microphone and sound system', deadline: 'By 10:30 AM' },
+      { text: 'Test background music playback', deadline: 'By 10:30 AM' },
+      { text: 'Prepare hidden sugar demo: get a can of cola + teaspoons or sugar cubes', deadline: 'By 10:00 AM' },
+      { text: 'Ensure the space is clean and ready before guests are seated', deadline: 'By 11:15 AM' },
+      { text: 'Ideate and create a script for the hidden sugar demo', deadline: 'By 2 April' },
+      { text: 'Fill in the order form for any supplies needed', deadline: 'By 27 March' },
+    ],
+    roles: [
+      { label: 'Hosts', name: 'Subah & Harsh' },
+      { label: 'Coordinator', name: null },
+      { label: 'Helper 1', name: null },
+      { label: 'Helper 2', name: null },
+    ]
+  },
+  {
+    id: 'book-reveal',
+    emoji: '📖',
+    title: 'Book Reveal & Photo Station',
+    prepTime: 'Prep: Day before + 9:00 AM',
+    onDay: '9:00 AM – 12:30 PM',
+    description: 'Sets up the book reveal table with copies of the Kids Food Book and creative props designed and created beforehand. Manages the reveal cloth and countdown moment. Builds an inspiring photo station — a life-size book cover cutout, fruits, vegetables, baskets and aprons — so guests are excited to take photos. Note: while the introduction happens inside, guests step outside for the reveal, so everything must be fully ready before 11:00 AM.',
+    todos: [
+      { text: 'Design and create props for the reveal table (think creative, memorable, themed)', deadline: 'Day before' },
+      { text: 'Order life-size book cover cutout with face hole (large format print)', deadline: '⚠️ Order by 27 March' },
+      { text: 'Set up reveal table: books arranged in a creative and beautiful design, cloth and any additional props', deadline: '9:00 AM on day' },
+      { text: 'Set up photo station with life-size cutout, fruit/veg props, aprons, baskets', deadline: 'Before 11:00 AM' },
+      { text: 'Full reveal area and photo station must be fully ready by 11:00 AM', deadline: 'By 11:00 AM' },
+      { text: 'Manage flow of guests through photo station after reveal', deadline: '12:00 PM onward' },
+      { text: 'Fill in the order form for props, printing and materials', deadline: 'By 27 March' },
+    ],
+    roles: [
+      { label: 'Lead', name: null },
+      { label: 'Helper', name: null },
+    ]
+  },
+  {
+    id: 'microgreens',
+    emoji: '🌱',
+    title: 'Microgreens Station',
+    prepTime: 'Prep: 11:00 AM',
+    onDay: '11:00 AM – 1:20 PM',
+    description: 'Sets up and runs the microgreens planting activity in Utsav (the name of the space on the first floor). Guides participants through filling their tray with soil, adding seeds and learning how microgreens grow. Each participant takes their tray home to grow. Note: use the book reveal window (11:55 AM – 12:15 PM) to finalise setup while guests are outside. The name of this space is Utsav.',
+    todos: [
+      { text: 'Order paper bowls for planting the microgreens in and cocopeat', deadline: 'By 27 March' },
+      { text: 'Source small spray bottles (5 pcs)', deadline: 'By 27 March' },
+      { text: 'Set up station with paper bowls, cocopeat, seeds and spray bottles', deadline: '11:00 AM on day' },
+      { text: 'Finalise station setup during book reveal window (11:55 – 12:15 PM)', deadline: 'Before 12:15 PM' },
+      { text: 'Run activity: guide each group through planting (12 min per group)', deadline: '12:15 PM – 1:15 PM' },
+      { text: 'Ensure all participants have labelled, take-home trays', deadline: 'By end of session' },
+      { text: 'Fill in the order form for paper bowls, cocopeat and materials', deadline: 'By 27 March' },
+    ],
+    roles: [
+      { label: 'Lead', name: null },
+      { label: 'Helper', name: null },
+    ]
+  },
+  {
+    id: 'food-game',
+    emoji: '🟢',
+    title: 'Green, Yellow & Red Food Game',
+    prepTime: 'Prep: Day before + 10:00 AM',
+    onDay: '11:00 AM – 1:20 PM',
+    description: 'Sets up and runs the food sorting station in Utsav on the first floor. Participants categorise food items into: 🟢 Green (whole, natural foods), 🟡 Yellow (minimally processed) and 🔴 Red (highly processed). Ends each round with a short, fun explanation. Use the book reveal window to finalise setup.',
+    todos: [
+      { text: 'Source real food items and packaging examples for the sorting game', deadline: 'By 27 March' },
+      { text: 'Prepare 3 labelled baskets or boxes: Green / Yellow / Red', deadline: 'By 2 April' },
+      { text: 'Prepare a short, fun explanation for each food category', deadline: 'By 2 April' },
+      { text: 'Set up station on first floor', deadline: '11:00 AM on day' },
+      { text: 'Finalise setup during book reveal window (11:55 – 12:15 PM)', deadline: 'Before 12:15 PM' },
+      { text: 'Run activity for each rotating group (12 min per group)', deadline: '12:15 PM – 1:15 PM' },
+      { text: 'Fill in the order form for any items to purchase', deadline: 'By 27 March' },
+    ],
+    roles: [
+      { label: 'Lead', name: null },
+      { label: 'Helper', name: null },
+    ]
+  },
+  {
+    id: 'guessing-game',
+    emoji: '🔍',
+    title: 'Mystery Guessing Game',
+    prepTime: 'Prep: 11:00 AM',
+    onDay: '11:00 AM – 1:20 PM',
+    description: 'Sets up and runs the guess the ingredient station in Utsav on the first floor. Round 1: participants put their hand in a mystery box and identify ingredients by touch. Round 2: participants taste small samples from the Kids Food Book recipes and guess the key ingredients.',
+    todos: [
+      { text: 'Make 5 mystery boxes (cardboard with hand holes, opaque)', deadline: 'By 2 April' },
+      { text: 'Select and source interesting touch-ingredients for Round 1', deadline: 'By 2 April' },
+      { text: 'Prepare taste samples from 3-4 Kids Food Book recipes for Round 2', deadline: 'Morning of event' },
+      { text: 'Source 100 small tasting cups and spoons', deadline: 'By 27 March' },
+      { text: 'Set up station in Utsav by 10:00 AM', deadline: '10:00 AM on day' },
+      { text: 'Finalise setup during book reveal window (11:55 – 12:15 PM)', deadline: 'Before 12:15 PM' },
+      { text: 'Run both rounds for each rotating group (12 min per group)', deadline: '12:15 PM – 1:15 PM' },
+      { text: 'Fill in the order form for cups, spoons and materials', deadline: 'By 27 March' },
+    ],
+    roles: [
+      { label: 'Lead', name: null },
+      { label: 'Helper', name: null },
+    ]
+  },
+  {
+    id: 'laddu',
+    emoji: '🍬',
+    title: 'Laddu Making Station',
+    prepTime: 'Prep: 10:00 AM',
+    onDay: '10:00 AM – 1:20 PM',
+    description: 'Sets up and runs the Satvic laddu making station outside of Utsav on the first floor. Guides participants through mixing, rolling and decorating their own laddus with rose petals, edible flowers and chopped nuts — showing that healthy food preparation can be creative and joyful.',
+    todos: [
+      { text: 'Prepare laddu base (dates, coconut, nuts, etc.) and divide into 4 portions — each portion should make 20 laddus (one per group member)', deadline: 'Morning of event' },
+      { text: 'Source decorating toppings: rose petals, edible flowers, chopped nuts', deadline: 'By 27 March' },
+      { text: 'Source kids aprons for participants', deadline: 'By 27 March' },
+      { text: 'Set up station outside Utsav on first floor by 10:00 AM', deadline: '10:00 AM on day' },
+      { text: 'Finalise setup during book reveal window (11:55 – 12:15 PM)', deadline: 'Before 12:15 PM' },
+      { text: 'Guide each rotating group through making and decorating their laddus', deadline: '12:15 PM – 1:15 PM' },
+      { text: 'Guide each member to intentionally eat their laddu, savouring each bite!', deadline: 'During activity' },
+      { text: 'Fill in the order form for ingredients and toppings', deadline: 'By 27 March' },
+    ],
+        roles: [
+      { label: 'Lead', name: null },
+      { label: 'Helper', name: null },
+    ]
+  },
+  {
+    id: 'lunch',
+    emoji: '🍱',
+    title: 'Lunch Setup & Serving',
+    prepTime: 'Prep: Before event',
+    onDay: '1:00 PM – 2:30 PM',
+    description: 'Sets up the lunch area on the first floor (the same space as the activity stations) while guests are on the ground floor for the group activity. There is only a 15-minute window — 1:15 PM to 1:30 PM — to transform the space: lay out mats, the menu board and put on soft background music before guests return. Food Serving Lead then coordinates all servers.',
+    todos: [
+      { text: 'Day before — move the white table outside of Utsav', deadline: 'Day before' },
+      { text: 'Day before — clean spoons and metal trays; place them on the white table', deadline: 'Day before' },
+      { text: 'By 10:00 AM on the day — keep menu board ready', deadline: 'By 10:00 AM' },
+      { text: 'Confirm all dish assignments and flow of serving by 10:00 AM with the lunch servers', deadline: 'By 10:00 AM' },
+      { text: 'Transform first floor station space into lunch area (15 min window!)', deadline: '1:15 – 1:30 PM' },
+      { text: 'Put on soft background music as guests come upstairs', deadline: '1:28 PM' },
+      { text: 'Begin food prayer and lunch service at 1:30 PM', deadline: '1:30 PM' },
+      { text: 'Ensure all servers keep refilling dishes throughout lunch', deadline: '1:30 – 2:30 PM' },
+      { text: 'Set up rosemary water station and ensure refills throughout', deadline: 'From 11:00 AM' },
+      { text: 'Manage saffron lemonade station during welcome period', deadline: '11:00 AM – 12:30 PM' },
+      { text: 'Fill in the order form for tableware or supplies needed', deadline: 'By 27 March' },
+    ],
+    roles: [
+      { label: 'Setup Lead', name: 'Shashank' },
+      { label: 'Setup Helper', name: null },
+      { label: 'Serving Lead', name: null },
+      { label: 'Server 1', name: null },
+      { label: 'Server 2', name: null },
+      { label: 'Server 3', name: null },
+      { label: 'Server 4', name: null },
+      { label: 'Water Station', name: null },
+      { label: 'Lemonade Station', name: null },
+    ]
+  },
+  {
+    id: 'farewell',
+    emoji: '🎨',
+    title: 'Farewell Activities',
+    prepTime: 'Prep: 2:00 PM',
+    onDay: '2:00 PM – 3:10 PM',
+    description: 'Manages the two farewell activities: (1) SATVIC Community Artwork — large S-A-T-V-I-C boards where children fill the letters with colourful handprints, creating a collaborative artwork. (2) Satvic Wish Station / Blessings Tree — participants write or draw a Satvic wish and tie it to the blessings tree at the exit.',
+    todos: [
+      { text: 'Organise 6 large boards with S-A-T-V-I-C letters (cardboard)', deadline: 'By 2 April' },
+      { text: 'Source washable finger paint in multiple colours (10+ colours)', deadline: 'By 27 March' },
+      { text: 'Prepare paint bowls and tissues for handprint cleanup', deadline: 'By 2 April' },
+      { text: 'Set up Satvic Wish station: wish papers, colourful pens, jute thread, big plant', deadline: '2:00 PM on day' },
+      { text: 'Guide guests to both farewell activities (2:30 – 3:10 PM)', deadline: 'Ongoing' },
+      { text: 'Fill in the order form for paints, boards, papers and materials', deadline: 'By 27 March' },
+    ],
+    roles: [
+      { label: 'Lead', name: null },
+      { label: 'Helper', name: null },
+    ]
+  },
+  {
+    id: 'mascot',
+    emoji: '🎭',
+    title: 'Mascot',
+    prepTime: 'Prep: Before event',
+    onDay: '11:30 AM – 1:30 PM',
+    description: 'Light up the lives of the little ones at the event by dressing up in a bear costume for the morning! The mascot enters with a basket of fruits, playfully interacts with guests, and at 11:55 AM leads everyone to the book reveal in a fun and exciting way.',
+    todos: [
+      { text: 'Source and confirm mascot costume rental', deadline: '⚠️ Confirm by 27 March' },
+      { text: 'Confirm who will wear the mascot costume on the day', deadline: 'By 30 March' },
+      { text: 'Prepare fruit basket prop for mascot entrance', deadline: 'Morning of event' },
+      { text: 'Brief mascot character on cues, movements and timing', deadline: 'Before event or during 9 AM briefing' },
+      { text: 'Mascot to be in costume and ready at 11:25 AM', deadline: '11:25 AM' },
+      { text: 'Mascot leads silent procession to book reveal at 11:55 AM', deadline: '11:55 AM' },
+    ],
+    roles: [
+      { label: 'Volunteer', name: null },
+    ]
+  },
+  {
+    id: 'content',
+    emoji: '🎬',
+    title: 'Content Creation & Photography',
+    prepTime: 'Prep: 10:30 AM',
+    onDay: '11:00 AM – 3:00 PM',
+    description: 'Two roles: (1) Event Photographer captures official photos throughout the entire event with a focus on the book reveal and photo station. (2) Content Creation Station runs a fun optional station where kids and adults can film a short reel holding the book — a mini contest for who can make the best video to share with their friends!',
+    todos: [
+      { text: 'Check camera equipment and charge batteries', deadline: 'By 2 April' },
+      { text: 'Set up content creation corner: phone stand, good lighting, simple backdrop', deadline: '10:30 AM on day' },
+      { text: 'Prepare a fun prompt card for the video contest (e.g. "Tell your friends why this book is awesome!")', deadline: 'By 2 April' },
+      { text: 'Set up and test microphone and sound system', deadline: '10:30 AM on day' },
+      { text: 'Be in position for book reveal at 12:00 PM (key moment for photographer)', deadline: '11:55 AM' },
+      { text: 'Collect all video entries and select a winner', deadline: 'During farewell activities' },
+    ],
+    roles: [
+      { label: 'Photographer', name: 'Skanda' },
+      { label: 'Content Lead', name: 'Abhijit' },
+      { label: 'Content Helper', name: 'Diksha' },
+    ]
+  },
+  {
+    id: 'station-guides',
+    emoji: '🗺️',
+    title: 'Activity Station Guides',
+    prepTime: 'Prep: 12:00 PM',
+    onDay: '12:00 PM – 1:20 PM',
+    description: 'Two people responsible for guiding the four groups (Carrot 🥕, Broccoli 🥦, Tomato 🍅, Pea 🫛) between the activity stations on the first floor. Signals when it\'s time to rotate every 12 minutes and ensures groups move to the correct next station smoothly and on time.',
+    todos: [
+      { text: 'Review the rotation schedule: 4 groups, 4 stations, 12 min each + 3 min transition', deadline: 'During 9 AM briefing' },
+      { text: 'Confirm rotation signal method (bell, chime or whistle)', deadline: 'During 9 AM briefing' },
+      { text: 'Print or memorise the rotation order for each group', deadline: 'Before 12:00 PM' },
+      { text: 'Be in position on the first floor and ready to guide from 12:00 PM', deadline: '12:00 PM' },
+      { text: 'Coordinate with each station lead to confirm they are ready before groups arrive', deadline: 'Before 12:15 PM' },
+      { text: 'After all rotations are complete (1:15 PM), send all guests down to the ground floor for a 15-minute activity hosted by Harsh', deadline: '1:15 PM' },
+    ],
+    roles: [
+      { label: 'Guide 1', name: null },
+      { label: 'Guide 2', name: null },
+    ]
+  },
+  {
+    id: 'ground-activity',
+    emoji: '🌾',
+    title: 'Ground Floor Group Activity',
+    prepTime: 'Prep: 1:00 PM',
+    onDay: '1:00 PM – 1:30 PM',
+    description: 'Harsh leads the "Where Does Food Come From?" session on the ground floor for all guests, using a microphone. Participants examine seeds, grains and millets, learn how different foods grow, discover the Prakriti Project and ask questions. One helper is needed to bring the mic down and usher guests from the first floor.',
+    todos: [
+      { text: 'Collect and lay out a display of seeds, grains and millets', deadline: 'By 2 April' },
+      { text: 'Source dried millet plant examples for display (check April availability)', deadline: 'By 27 March' },
+      { text: 'Bring microphone down to ground floor before 1:15 PM', deadline: '1:00 PM on day' },
+      { text: 'Usher all guests from first floor down to ground floor', deadline: '1:15 PM on day' },
+      { text: 'Usher guests back up to first floor for lunch at 1:30 PM', deadline: '1:30 PM' },
+    ],
+    roles: [
+      { label: 'Host', name: 'Harsh' },
+      { label: 'Helper', name: null },
+    ]
+  },
+];
+
+let currentModal = null;
+window.currentProjectId = null;
+let currentProjectId = null;
+
+function getSignupName(stationId, roleIndex) {
+  return (signups[stationId] || {})[roleIndex] || null;
+}
+
+function renderHome() {
+  const grid = document.getElementById('stations-grid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  stations.forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'station-card';
+    card.onclick = () => showProject(s.id);
+
+    const rolesHTML = s.roles.map((r, i) => {
+      const savedName = getSignupName(s.id, i);
+      const displayName = savedName || r.name;
+      const isOpen = !displayName;
+      const isSavedSignup = !!getSignupName(s.id, i);
+      return `<div class="role-pill ${isOpen ? 'open' : 'filled'}">
+        <span class="role-label">${r.label}</span>
+        <span class="role-name ${isOpen ? 'available' : ''}">${displayName || 'Available'}</span>
+        ${isOpen ? `<button class="signup-btn" onclick="event.stopPropagation(); openModal('${s.id}', ${i})">Sign up</button>` : ''}
+        ${isSavedSignup ? `<button class="unsign-btn" onclick="event.stopPropagation(); removeSignup('${s.id}', ${i})">✕</button>` : ''}
+      </div>`;
+    }).join('');
+
+    card.innerHTML = `
+      <span class="card-emoji">${s.emoji}</span>
+      <div class="card-title">${s.title}</div>
+      <div class="card-time" style="display:flex;flex-direction:column;gap:.2rem;">
+        <span>📦 Prep: ${s.prepTime.replace('Prep: ','').replace('Prep:','').trim()}</span>
+        <span>⏰ On the day: ${s.onDay}</span>
+      </div>
+      <div class="card-roles">${rolesHTML}</div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function showProject(id) {
+  const s = stations.find(x => x.id === id);
+  if (!s) return;
+  currentProjectId = id;
+  window.currentProjectId = id;
+
+  document.getElementById('proj-emoji').textContent = s.emoji;
+  document.getElementById('proj-title').textContent = s.title;
+  document.getElementById('proj-desc').textContent = s.description;
+
+  const chips = document.getElementById('proj-chips');
+  chips.innerHTML = `
+    <span class="timing-chip prep">📦 ${s.prepTime}</span>
+    <span class="timing-chip" style="margin-top:.4rem">⏰ On the day: ${s.onDay}</span>
+  `;
+
+  const todosEl = document.getElementById('proj-todos');
+  todosEl.innerHTML = s.todos.map((t, i) => `
+    <li class="todo-item${doneTodos[id+'-'+i] ? ' done' : ''}" id="todo-${id}-${i}" onclick="toggleTodo('${id}', ${i})">
+      <div class="todo-check">${doneTodos[id+'-'+i] ? '✓' : ''}</div>
+      <div>
+        <span class="todo-text">${t.text}</span>
+        ${t.deadline ? `<span class="todo-deadline">⏱ ${t.deadline}</span>` : ''}
+      </div>
+    </li>
+  `).join('');
+
+  const rolesEl = document.getElementById('proj-roles');
+  rolesEl.innerHTML = s.roles.map((r, i) => {
+    const savedName = getSignupName(id, i);
+    const displayName = savedName || r.name;
+    const isOpen = !displayName;
+    const isLead = r.label.toLowerCase().includes('lead') || r.label.toLowerCase().includes('host') || r.label.toLowerCase().includes('photographer') || r.label.toLowerCase().includes('coordinator') || r.label.toLowerCase().includes('volunteer');
+    return `<div class="proj-role-row ${isOpen ? 'open' : 'filled'}" id="proj-role-${id}-${i}">
+      <span class="proj-role-badge ${isLead ? 'lead' : 'helper'}">${r.label}</span>
+      <span class="proj-role-name ${isOpen ? 'available' : ''}" id="proj-role-name-${id}-${i}">${displayName || 'Available'}</span>
+      ${isOpen ? `<button class="proj-signup-btn" onclick="openModal('${id}', ${i})">Sign up →</button>` : ''}
+      ${!isOpen && !!getSignupName(id, i) ? `<button class="proj-unsign-btn" onclick="removeSignup('${id}', ${i})">Remove</button>` : ''}
+    </div>`;
+  }).join('');
+
+  document.getElementById('proj-order-link').href =
+    'https://docs.google.com/spreadsheets/d/1dOEz6tmuFYVKGXydzurCSao-CA3YR68TUbJQ7GTpA4o/edit?usp=sharing';
+
+  document.getElementById('home-page').style.display = 'none';
+  document.getElementById('project-page').style.display = 'block';
+  window.scrollTo(0,0);
+}
+
+function showHome() {
+  document.getElementById('project-page').style.display = 'none';
+  document.getElementById('home-page').style.display = 'block';
+  renderHome();
+  window.scrollTo(0,0);
+}
+
+function toggleTodo(stationId, index) {
+  const key = `${stationId}-${index}`;
+  const newVal = !doneTodos[key];
+  doneTodos[key] = newVal;
+  // optimistic UI
+  const el = document.getElementById(`todo-${stationId}-${index}`);
+  if (el) {
+    el.classList.toggle('done', newVal);
+    el.querySelector('.todo-check').textContent = newVal ? '✓' : '';
+  }
+  saveTodoRemote(key, newVal);
+}
+
+function applyDoneTodos(stationId) {
+  stations.find(s => s.id === stationId)?.todos.forEach((_, i) => {
+    const el = document.getElementById(`todo-${stationId}-${i}`);
+    if (el) {
+      el.classList.toggle('done', !!doneTodos[`${stationId}-${i}`]);
+      const check = el.querySelector('.todo-check');
+      if (check) check.textContent = doneTodos[`${stationId}-${i}`] ? '✓' : '';
+    }
+  });
+}
+
+function openModal(stationId, roleIndex) {
+  const s = stations.find(x => x.id === stationId);
+  const r = s.roles[roleIndex];
+  currentModal = { stationId, roleIndex };
+
+  document.getElementById('modal-station-title').textContent = s.title;
+  document.getElementById('modal-role-tag').textContent = r.label;
+  document.getElementById('signup-name').value = '';
+  document.getElementById('signup-check').checked = false;
+  document.getElementById('modal-submit-btn').disabled = true;
+  document.getElementById('modal-form').style.display = 'block';
+  document.getElementById('modal-success').style.display = 'none';
+  document.getElementById('modal-overlay').classList.add('active');
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('active');
+}
+
+function closeModalOutside(e) {
+  if (e.target === document.getElementById('modal-overlay')) closeModal();
+}
+
+document.getElementById('signup-name').addEventListener('input', checkModalReady);
+document.getElementById('signup-check').addEventListener('change', checkModalReady);
+
+function checkModalReady() {
+  const name = document.getElementById('signup-name').value.trim();
+  const checked = document.getElementById('signup-check').checked;
+  document.getElementById('modal-submit-btn').disabled = !(name && checked);
+}
+
+function submitSignup() {
+  const name = document.getElementById('signup-name').value.trim();
+  if (!name || !currentModal) return;
+  document.getElementById('modal-submit-btn').disabled = true;
+  document.getElementById('modal-submit-btn').textContent = 'Saving...';
+  saveSignupRemote(currentModal.stationId, currentModal.roleIndex, name);
+  document.getElementById('modal-form').style.display = 'none';
+  document.getElementById('modal-success').style.display = 'block';
+  setTimeout(() => {
+    closeModal();
+    document.getElementById('modal-submit-btn').textContent = 'Sign Me Up';
+  }, 2200);
+}
+
+async function removeSignup(stationId, roleIndex) {
+  removeSignupRemote(stationId, roleIndex);
+}
+
+String.prototype.hashCode = function() {
+  let hash = 0;
+  for (let i = 0; i < this.length; i++) {
+    hash = ((hash << 5) - hash) + this.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
+};
+
+function initApp() {
+  renderHome();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  renderHome();
+});
+
+// Make functions available globally for onclick handlers
+window.openModal = openModal;
+window.closeModal = closeModal;
+window.closeModalOutside = closeModalOutside;
+window.submitSignup = submitSignup;
+window.removeSignup = removeSignup;
+window.toggleTodo = toggleTodo;
+window.showProject = showProject;
+window.showHome = showHome;
+
+</script>
+</body>
+</html>
